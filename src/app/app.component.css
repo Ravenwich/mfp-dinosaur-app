@@ -1,0 +1,64 @@
+.banner {
+    background-color: #1F6F8B;
+    color: #BFD7B5;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Montserrat:wght@600', cursive;
+}
+
+.sub-banner {
+    background-color: #755139;
+    color: #D5ECC2;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Montserrat:wght@600', cursive;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 20px;
+    justify-items: center;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #82A993;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+    }
+
+    .banner {
+        font-size: 1.2rem;
+    }
+
+    .sub-banner {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .banner {
+        font-size: 1rem;
+    }
+
+    .sub-banner {
+        font-size: 0.8rem;
+    }
+}
+
+

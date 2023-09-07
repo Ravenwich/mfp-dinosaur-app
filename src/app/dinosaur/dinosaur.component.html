@@ -1,0 +1,4 @@
+<div class="dino-card" (click)="toggle()">
+    <img *ngIf="!showName || imageUrl" [src]="imageUrl" alt="Dinosaur Image">
+    <div *ngIf="showName">{{name}}</div>
+</div>
